@@ -1,0 +1,80 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		
+		<form action='save.php' method='get'>
+			<label>First Name</label><br>
+			<input type="text" name='firstName' value='softanic' >
+			<br>
+			<label>Last Name</label><br>
+			<input type="text" name='last_name' autofocus autocomplete='off' placeholder='Last Name' maxlength=10>
+			<br>
+			<label>Mobile Number</label><br>
+			<input type="number" name='mobile_no' min=10 max=20 step="2" >
+			
+			<br>
+			<label>Password</label><br>
+			<input type="password" name='pass' required>
+			
+			<br>
+			<label>Email</label><br>
+			<input type="email" name='email' >
+			
+			<br>
+			<label>date</label><br>
+			<input type="date" name='date' placeholder="yyyy-mm-dd">
+			
+			<br>
+			<label>time</label><br>
+			<input type="time" name='date' placeholder="yyyy-mm-dd">
+			
+			<br>
+			<label>week</label><br>
+			<input type="week" name='date' placeholder="yyyy-mm-dd">
+			
+			<br>
+			<label>week</label><br>
+			<input type="month" name='date' placeholder="yyyy-mm-dd">
+			
+			<br>
+			<label>color</label><br>
+			<input type="color" name='color' >
+			
+			<br>
+			<label>gender</label><br>
+			<input type="radio" name='gender' value='m' checked>Male
+			<input type="radio" name='gender' value='f' checked>Female
+			
+			<br>
+			<label>gender</label><br>
+			<input type="checkbox" name='gender' value='m'>Male
+			<input type="checkbox" name='gender' value='f' checked>Female
+			<input type="checkbox" name='gender' value='m'>Male
+			<input type="checkbox" name='gender' value='f' checked>Female
+			
+			<br>
+			<label>City</label>
+			<select name='city' multiple>
+				<option value='01'>Jalgaon</option>
+				<option value="02">pune</option>
+				<option value="03">mumbai</option>
+				<option value="04">nashik</option>
+				<option value="05">dhule</option>
+			</select>
+			<br>
+			<label>Address</label><br>
+			<textarea rows=5 cols=50 name='addr'></textarea><br>
+			
+			<input type="submit" value='login'>
+			<input type="reset">
+			<input type="button" value="custom btn">
+			
+			
+			<button type="submit"><h1>Save</h1></button>
+			
+		</form>
+		
+	</body>
+</html>

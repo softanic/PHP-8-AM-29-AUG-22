@@ -1,0 +1,27 @@
+ <html>
+	<head>
+	
+	</head>
+	<body>
+		<script>
+		/*	function demo(name)
+			{
+				return 'welcome '+name+'<br>';
+			}
+			document.write(demo('mohini'));
+			var n='bhagyashri';
+			//alert(demo(n));
+			*/
+			function welcome()
+			{
+				var n=document.getElementById('fname').value;
+				document.getElementById('fname2').value='welcome '+n;
+				//alert('welcome '+n);
+			}
+			
+		</script>
+		<input type="text" id="fname" onkeyup="welcome()" >
+		<input type="text" id="fname2" >
+		<button onclick="welcome('vaishnavi')">click here</button>
+	</body>
+ </html>

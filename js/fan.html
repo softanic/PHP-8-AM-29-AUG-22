@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script>
+		function fan()
+		{
+			
+			var fan_src=document.getElementById('fan').src;
+			//alert(fan_src);
+			if(fan_src.match('gif'))
+			{
+				document.getElementById('fan').src='fan.jpg';
+			}else{
+				document.getElementById('fan').src='fan.gif';
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<img src="fan.gif" id="fan" width=200 onclick='fan()'>
+		<button onclick="document.getElementById('fan').src='fan.gif'"> start</button>
+		<button onclick="document.getElementById('fan').src='fan.jpg'"> stop</button>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script>
+			function change_img(btn)
+			{
+				/*if(btn==1)
+				{
+					document.getElementById('img').src='slider.jpg';
+				}else if(btn==2)
+				{
+					document.getElementById('img').src='banner.png';
+				}else if(btn==3)
+				{
+					document.getElementById('img').src='banner.webp';
+				}*/
+				
+				document.getElementById('img').src=btn;
+			}
+		</script>
+	</head>
+	<body>
+		<img id="img" src="slider.jpg" height="200" width="500">
+		<br><br>
+		<button onclick="change_img('slider.jpg')">img 1</button>
+		<button onclick="document.getElementById('img').src='banner.png'">img 2</button>
+		<button onclick="change_img('banner.webp')">img 3</button>
+	</body>
+</html>

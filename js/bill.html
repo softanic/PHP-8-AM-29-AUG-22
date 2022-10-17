@@ -1,0 +1,35 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<script>
+			
+			var cr=650;
+			var pr=300;
+			var units=cr-pr;
+			var amount=0;
+			if(units <=100)
+			{
+				amount=units*3;
+			}else if(units>100 && units <=300)
+			{
+				amount=300;
+				u=units-100;
+				amount += u*7;
+			}
+			else if(units>300 && units <=500)
+			{
+				amount=1700;
+				u=units-300;
+				amount += u*10;
+			}else{
+				amount=3700;
+				u=units-500;
+				amount += u*10;
+			}
+			document.write(amount);
+		</script>
+	</body>
+	
+</html>

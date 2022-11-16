@@ -1,0 +1,32 @@
+<html>
+	<body>
+		<h1 id='time'></h1>
+		<script>
+			let no=10;
+			let ans=no/3;
+			//document.write(ans.toFixed(0));
+			//document.write(Math.ceil(3.01));
+			//document.write(Math.floor(3.01));
+			//document.write(Math.round(300.49));
+			//document.write(Math.round(Math.random()*10000));
+			function showTime()
+			{
+				var d=new Date();
+				
+				//document.write(d.getFullYear());
+				var month=['jan','feb','march','april','may','june','july','aug','sept','oct','nov','dec'];
+				//document.write(month[d.getMonth()]);
+				//document.write(Date.now());
+				let clock="";
+				clock +=d.getHours() +" : ";
+				clock +=d.getMinutes()+" : ";
+				clock +=d.getSeconds()+" : ";
+				clock +=d.getMilliseconds();
+				document.getElementById('time').innerHTML=clock;
+				setTimeout("showTime()",1);
+			}
+			
+			showTime();
+		</script>
+	</body>
+</html>

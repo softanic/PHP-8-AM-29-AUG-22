@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script>
+			function validate()
+			{
+				/*let fname=document.getElementById('fname').value;
+				if(fname.length==0)
+				{
+					document.getElementById('fnameErr').innerHTML='Please enter fname';
+					document.getElementById('fname').style.border="1px solid red"
+					return false;
+				}else if(fname.length<=2)
+				{
+					document.getElementById('fnameErr').innerHTML='Please enter valid fname';
+					return false;
+				}*/
+				
+			
+			}
+		</script>
+		<style>
+			span{
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<form action='save.php'>
+			<label>First Name</label>
+			<input type="text" id='fname' required>
+			<span id="fnameErr"></span>
+			<br>
+			<input type="submit" onclick="return validate()">
+		</form>
+	
+	</body>
+</html>
+
+217.21.91.161	
